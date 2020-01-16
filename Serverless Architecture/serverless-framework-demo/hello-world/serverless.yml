@@ -1,0 +1,18 @@
+# Welcome to Serverless
+
+service: hello-world
+app: demo
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+  region: us-west-1
+  profile: your_profile_of_aws
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /
+          method: get
