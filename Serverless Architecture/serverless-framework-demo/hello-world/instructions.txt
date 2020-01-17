@@ -1,0 +1,20 @@
+# installing serverless
+npm install -g serverless
+
+# bootstrapping serverless
+sls create --template aws-nodejs --path hello-wolrd
+
+# change directory to hello-world path
+cd /path/to/hello-world
+
+# installing serverless offline plugin
+npm install serverless-offline@next --save-dev
+
+# testing offline
+sls offline
+
+# deploying serveerless app
+sls deploy
+
+# invoking function
+sls invoke -f hello
