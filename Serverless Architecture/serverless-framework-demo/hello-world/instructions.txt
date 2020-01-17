@@ -1,9 +1,6 @@
 # installing serverless
 npm install -g serverless
 
-# bootstrapping serverless
-sls create --template aws-nodejs --path hello-wolrd
-
 # change directory to hello-world path
 cd /path/to/hello-world
 
